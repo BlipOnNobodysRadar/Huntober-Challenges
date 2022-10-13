@@ -5,7 +5,6 @@ print out “Buzz”; when it’s divisible by both 3 and 5, print out “Fizz B
 */
 function fizzBuzz(n) {
   for (let i = 1; i <= n; i++) {
-    let str = "";
     switch (true) {
       case i % 3 === 0 && i % 5 === 0:
         console.log("Fizz Buzz");
