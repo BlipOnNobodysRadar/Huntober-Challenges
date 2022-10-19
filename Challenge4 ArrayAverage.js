@@ -11,8 +11,8 @@ getAverage([1,1,1,1,1,1,1,2]),1)
 */
 
 function getAverage(arr) {
-  return arr.reduce((sum, grade) => grade + sum, 0) / arr.length;
+  return parseInt(arr.reduce((sum, grade) => grade + sum, 0) / arr.length);
 }
-getAverage([2, 2, 2, 2]);
-getAverage([1, 2, 3, 4, 5]);
-getAverage([1, 1, 1, 1, 1, 1, 1, 2]);
+console.log(getAverage([2, 2, 2, 2]));
+console.log(getAverage([1, 2, 3, 4, 5]));
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]));
