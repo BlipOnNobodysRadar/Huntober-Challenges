@@ -30,3 +30,9 @@ function arrayDiff(a, b) {
 function arrayDiff(a, b) {
   return a.filter((v) => !b.includes(v));
 }
+
+// set can find value in const time
+function arrayDiff(a, b) {
+  let newSet = new Set(b); // O(n)
+  a.filter((v) => !newSet.has(v)); // O(n) rather than O(n^2) becuase Set.prototype.has() is O(1) rather than O(n)
+}
