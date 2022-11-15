@@ -14,6 +14,8 @@ sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0])
 // E above
 // P filter a new array of odd numbers, sort that array, map over original array, if odd replace with sorted value popped
 
+// I sorted in descending rather than ascending and popped because shifting an array is O(n) and pop is O(1)
+// This solution is O(n) + O(n log n)
 function sortArray(arr) {
   const oddNums = arr.filter((val) => val % 2 !== 0);
   oddNums.sort((a, b) => b - a);
